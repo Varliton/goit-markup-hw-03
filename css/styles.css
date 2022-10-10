@@ -4,8 +4,9 @@
   --tertiary-text-color: #757575;
   --primary-white-color: #fff;
   --footer-contact-color: rgba(255, 255, 255, 0.6);
-  --primary-background-color: #f5f5f5;
+  --primary-background-color: #fff;
   --secondary-background-color: #2f303a;
+  --tertiary-background-color: #F5F4FA;
 }
 
 body {
@@ -37,7 +38,6 @@ body {
 .section-title {
   margin-top: 0px;
   margin-bottom: 50px;
-
 
   font-size: 36px;
   line-height: 1.16;
@@ -82,6 +82,7 @@ body {
   margin-right: 50px;
 }
 
+
 .nav-link {
   display: block;
   padding-top: 32px;
@@ -92,6 +93,10 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+}
+
+.current{
+  color: var(--secondary-text-color);
 }
 
 .nav-link:hover,
@@ -186,38 +191,54 @@ body {
 }
 /* Examples */
 
-.examples {
-  margin-bottom: 94px;
-}
 
-.examples-list{
+.examples-list {
   display: flex;
 }
 
-.examples-item:not(:last-child){
-  margin-right: 30px;
+.examples-item{
 
-}
-
-/* Team */
-.team{
   margin-bottom: 94px;
 }
 
-.team-list{
+.examples-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Team */
+.team {
+  
+
+  background-color: var(--tertiary-background-color);
+}
+
+.team-list {
   display: flex;
   text-align: center;
 }
 
-.team-item:not(:last-child){
-  margin-right: 30px;
+.team-image{
+  display: block;
+}
 
+.team-item {
+  margin-bottom: 94px;
+
+
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-title {
   margin-bottom: 10px;
   margin-top: 30px;
-  
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -230,9 +251,14 @@ body {
 }
 /* Footer */
 footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--secondary-background-color);
 }
 .footer-logo {
+  display: block;
+  margin-bottom: 20px;
+
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -244,9 +270,14 @@ footer {
 .footer-link,
 .footer-contact {
   text-decoration: none;
-
   color: var(--primary-white-color);
   font-style: normal;
+}
+
+
+.footer-item:not(:last-child){
+  display: block;
+  margin-bottom: 9px;
 }
 
 .footer-contact {
