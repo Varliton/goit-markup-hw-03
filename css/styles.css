@@ -286,8 +286,28 @@ footer {
 }
 
 /* Portfolio */
+.portfolio{
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
 
-.categories-button {
+.portfolio-list{
+  display: flex;
+  justify-content: center;
+  
+  margin-bottom: 50px;
+}
+
+
+.categories-button  {
+  display: inline-block;
+  min-width: 73px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-right: 8px;
+
+
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -306,14 +326,41 @@ footer {
 }
 /* examples */
 
+.work-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin: -18px;
+  
+}
+
+.work-item{
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+}
+
+.work-item:not(:last-child){
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
 .work-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .work-text {
   color: var(--tertiary-text-color);
   font-size: 16px;
   line-height: 1.88;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  
+}
+
+.work-image{
+  display: block;
+  
 }
